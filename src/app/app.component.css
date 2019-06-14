@@ -14,7 +14,6 @@ h3 {
   text-align: right;
   padding-right: 5%;
   margin-bottom: .5%;
-
 }
 
 .btn {
@@ -26,4 +25,10 @@ h3 {
   margin-left: 2%;
   margin-top: .5%;
   margin-bottom: 1%;
+  width: 105px;
+}
+
+.mapPlaceholder {
+  display: block;
+margin: 0 auto;
 }
