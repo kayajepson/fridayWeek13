@@ -39,3 +39,11 @@ margin: 0 auto;
   height: 100%;
   float: left;
 }
+
+#map {
+  height: 100%;
+}
+
+#street-view {
+  height: 100%;
+}

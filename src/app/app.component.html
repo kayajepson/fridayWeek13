@@ -6,8 +6,11 @@
         src="https://maps.googleapis.com/maps/api/js">
     </script> -->
     <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initPano">
-</script>
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC3iSCVv2e-1Ku9nPAmtINHsvKbEjwaCE&callback=initialize">
+    </script>
+    <!-- <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC3iSCVv2e-1Ku9nPAmtINHsvKbEjwaCE&callback=initPano">
+</script> -->
     <title>{{currentFocus.map}}</title>
   </head>
   <body>
@@ -16,6 +19,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzd
     <!-- <img src="../../assets/map.png" alt="map placeholder for api" class="mapPlaceholder"> -->
     <div #gmap style="width:100%;height:800px"></div>
     <div id="pano"></div>
+    <div id="street-view"></div>
 
   <div class="col-md-3 col-sm-12 col-xs-12">
   <button (click)="setMapType('terrain')" class="btn btn-primary">Terrain</button>
