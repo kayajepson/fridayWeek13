@@ -10,15 +10,6 @@ src="https://maps.googleapis.com/maps/api/js?key=&callback=initPano">
   <body>
     <h3><img src="../../assets/logo.png" alt="logo image" class="logo">Round: {{currentFocus.round}} | Score: {{currentFocus.score}} | Map: {{currentFocus.map}} | <button type="button" name="signup" class="btn btn-success btn-sm">Sign Up</button> LOG IN</h3>
 
-    <!-- <img src="../../assets/map.png" alt="map placeholder for api" class="mapPlaceholder"> -->
-    <div #gmap style="width:100%;height:800px"></div>
-    <div id="pano"></div>
-    <div id="street-view"></div>
-
-  <div class="col-md-3 col-sm-12 col-xs-12">
-  <button (click)="setMapType('terrain')" class="btn btn-primary">Terrain</button>
-  <button (click)="setMapType('satellite')" class="btn btn-danger">Satellite</button>
-  <button (click)="setMapType('roadmap')" class="btn btn-warning">Road Map</button>
-</div>
+<map-comp></map-comp>
   </body>
 </html>
