@@ -1,11 +1,12 @@
 body {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 1);
   padding: 5px;
   margin-top: .5%;
   margin-bottom: .5%;
 }
 
 h3 {
+  background-color: rgba(0, 0, 0, 1);
   margin-top: .5%;
   color: white;
   font-family: sans-serif;
@@ -31,4 +32,10 @@ h3 {
 .mapPlaceholder {
   display: block;
 margin: 0 auto;
+}
+
+#pano {
+  width: 50%;
+  height: 100%;
+  float: left;
 }
