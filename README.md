@@ -1,6 +1,20 @@
-# GeoguessrRemake
+# _Geoguessr Remake_
 
+#### By _**Kaya Jepson**_
+
+## Description
+
+_Attempting to recreate the website/game _Geoguessr._
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| The program should have a navbar component. | x | x |
+| The program should have a component allowing users to begin a game. | x | x |
+| The program should have a component that displays popular maps | x | x |
+| The program should have a component which displays the contact and partner info | x | x |
+| The program should use the google api for the main game component | x | x |
+
 
 ## Development server
 
