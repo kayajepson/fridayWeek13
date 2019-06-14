@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavBarComponent } from './navbar/navbar.component';
 import { MapComponent } from './map/map.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    NavBarComponent,
     MapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+      HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
