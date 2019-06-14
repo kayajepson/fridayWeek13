@@ -8,4 +8,5 @@ import { Navbar } from './models/navbar.model'
 })
 export class AppComponent {
   title = 'app';
+  currentFocus = new Navbar(1,0,"world");
 }
