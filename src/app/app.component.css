@@ -34,20 +34,6 @@ h3 {
 margin: 0 auto;
 }
 
-#pano {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
 #map {
   height: 100%;
-}
-
-#street-view {
-  height: 100%;
-}
-
-.agm-map {
-  height: 400px;
 }

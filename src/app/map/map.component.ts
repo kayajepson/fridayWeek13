@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Output } from '@angular/core';
 import { NgModule, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
@@ -11,7 +12,7 @@ import { AgmCoreModule } from '@agm/core';
 })
 export class MapComponent {
   @ViewChild('gmap') gmapElement: any;
-map: google.maps.Map;
+  map: google.maps.Map;
   ngOnInit() {
     var streetViewService = new google.maps.StreetViewService();
     streetViewService.getPanoramaByLocation(
@@ -32,6 +33,6 @@ map: google.maps.Map;
     this.map.setMapTypeId(mapTypeId)
   }
   // setCenter(e:any){
-  //   this.map.setCenter(new google.maps.LatLng(this.latitude, this.longitude));
-  // }
-}
+    //   this.map.setCenter(new google.maps.LatLng(this.latitude, this.longitude));
+    // }
+  }
