@@ -12,8 +12,9 @@ export class AppComponent {
   @Output() sendScore = new EventEmitter();
   submitForm() {
     let score = 100;
-    console.log("here", this.currentFocus.map);
-      this.currentFocus.round += 1; this.currentFocus.score = score; this.currentFocus.map);
+      this.currentFocus.round += 1;
+      this.currentFocus.score = score;
+      this.currentFocus.map;
     }
   title = 'app';
   currentFocus = new Navbar(1,0,"World");
