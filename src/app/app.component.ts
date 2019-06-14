@@ -18,47 +18,25 @@ export class AppComponent {
   map: google.maps.Map;
 
   ngOnInit() {
-
-    var geocoder = new google.maps.Geocoder();
-    var address = "2 Simei Street 3, Singapore, Singapore 529889";
-
-    geocoder.geocode({'address': address}, function (results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            var latitude = results[0].geometry.location.lat();
-            var longitude = results[0].geometry.location.lng();
-
-            console.log(latitude + " " + longitude);
-
-            var svService = new google.maps.StreetViewService();
-            var panoRequest = {
-                location: results[0].geometry.location,
-                preference: google.maps.StreetViewPreference.NEAREST,
-                radius: 50,
-                source: google.maps.StreetViewSource.OUTDOOR
-            };
-
-            var findPanorama = function(radius) {
-                panoRequest.radius = radius;
-                svService.getPanorama(panoRequest, function(panoData, status){
-                    if (status === google.maps.StreetViewStatus.OK) {
-                        var panorama = new google.maps.StreetViewPanorama(
-                            document.getElementById('street-view'),
-                            {
-                                pano: panoData.location.pano,
-                            });
-                    } else {
-                        //Handle other statuses here
-                        if (radius > 200) {
-                            alert("Street View is not available");
-                        } else {
-                            findPanorama(radius + 5);
-                        }
-                    }
-                });
-            };
-
-            findPanorama(50);
-        }
-    });
-}
+    var streetViewService = new google.maps.StreetViewService();
+    streetViewService.getPanoramaByLocation(
+      new google.maps.LatLng(44.0521, -123.0868),
+      15,
+      function(data, status) {
+        console.log(data, status)
+      }
+    )
+    var mapProp = {
+      center: new google.maps.LatLng(44.0521, -123.0868),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+  }
+  setMapType(mapTypeId: string) {
+    this.map.setMapTypeId(mapTypeId)
+  }
+  // setCenter(e:any){
+  //   this.map.setCenter(new google.maps.LatLng(this.latitude, this.longitude));
+  // }
 }
