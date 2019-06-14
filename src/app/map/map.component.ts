@@ -2,8 +2,6 @@ import { Component, OnInit, Output } from '@angular/core';
 import { NgModule, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
 import { AgmCoreModule } from '@agm/core';
-import { Navbar } from './models/navbar.model';
-
 
 
 @Component({
@@ -12,6 +10,8 @@ import { Navbar } from './models/navbar.model';
   templateUrl: './map.component.html'
 })
 export class MapComponent {
+  @ViewChild('gmap') gmapElement: any;
+map: google.maps.Map;
   ngOnInit() {
     var streetViewService = new google.maps.StreetViewService();
     streetViewService.getPanoramaByLocation(
@@ -31,7 +31,7 @@ export class MapComponent {
   setMapType(mapTypeId: string) {
     this.map.setMapTypeId(mapTypeId)
   }
-  setCenter(e:any){
-    this.map.setCenter(new google.maps.LatLng(this.latitude, this.longitude));
-  }
+  // setCenter(e:any){
+  //   this.map.setCenter(new google.maps.LatLng(this.latitude, this.longitude));
+  // }
 }
