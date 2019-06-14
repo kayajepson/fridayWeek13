@@ -47,3 +47,7 @@ margin: 0 auto;
 #street-view {
   height: 100%;
 }
+
+.agm-map {
+  height: 400px;
+}

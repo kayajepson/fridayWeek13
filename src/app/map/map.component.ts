@@ -1,22 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { NgModule, ViewChild } from '@angular/core';
+import { } from '@types/googlemaps';
+
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  selector: 'your-comp',
+  styles: ['agm-map { height: 300px; /* height is required */ }'],
+  template: `
+    <agm-map [latitude]='latitude' [longitude]='longitude'
+      [mapTypeId]='mapType'>
+    </agm-map>
+  `
 })
 export class MapComponent {
-  // @Output() sendMap = new EventEmitter();
-  //
-  // // Initialize and add the map
-  //   let newMap = function initMap() {
-  //   // The location of Uluru
-  //   var uluru = {lat: -25.344, lng: 131.036};
-  //   // The map, centered at Uluru
-  //   var map = new google.maps.Map(
-  //     document.getElementById('map'), {zoom: 4, center: uluru});
-  //     // The marker, positioned at Uluru
-  //     var marker = new google.maps.Marker({position: uluru, map: map});
-  //     this.sendKeg.emit(newMap);
-  //     }
+  latitude = -28.68352;
+  longitude = -147.20785;
+  mapType = 'satellite';
 }
