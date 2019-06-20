@@ -16,6 +16,6 @@ export class AppComponent {
       this.currentFocus.score = score;
       this.currentFocus.map;
     }
-  title = 'app';
+  title = 'GeoGuessr';
   currentFocus = new Navbar(1,0,"World");
 }

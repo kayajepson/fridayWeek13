@@ -2,6 +2,8 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { NgModule, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
+import { Router } from '@angular/router';
+
 import { AgmCoreModule } from '@agm/core';
 
 
@@ -11,8 +13,8 @@ import { AgmCoreModule } from '@agm/core';
   templateUrl: './map.component.html'
 })
 export class MapComponent {
-  // @ViewChild('gmap') gmapElement: any;
-  // map: google.maps.Map;
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
     var fenway = {lat: 42.345573, lng: -71.098326};

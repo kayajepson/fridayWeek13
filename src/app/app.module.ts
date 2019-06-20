@@ -4,17 +4,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { MapComponent } from './map/map.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    MapComponent
+    MapComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
-      HttpModule
+      HttpModule,
+      routing
   ],
   providers: [],
   bootstrap: [AppComponent]

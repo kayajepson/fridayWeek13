@@ -1,0 +1,54 @@
+html {
+  background-color: #1a1a1a;
+  line-height: 120%;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+#start_header {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  line-height: 1em;
+  width: 90%;
+  color: #ffffff;
+}
+
+#start_desc {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+  max-width: 680px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.container {
+  background-color:rgba(26, 26, 26, .5);
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-rows: 75px 80% 500px auto;
+}
+
+.grid-item {
+  background-color: rgba(26, 26, 26, .5);
+  padding: 20px;
+}
+
+.btn-lg {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-weight: 600;
+  font-stretch: expanded;
+}
+
+#main {
+background-image: url('../../assets/earth.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
