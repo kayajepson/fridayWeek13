@@ -43,7 +43,7 @@ text-align: center;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5% 750px 300px;
+  grid-template-rows: 5px 750px 300px;
   grid-template-areas: "header header header header" "main main main main" "bottom bottom bottom bottom";
   clear: left;
 }
