@@ -1,0 +1,176 @@
+html {
+  background-color: #1a1a1a;
+  line-height: 120%;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+h6 {
+  margin: 25px;
+}
+
+.bot-text-1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#start_header {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 17%;
+}
+
+#start_desc {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn-large {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .01fr 1.2fr 1fr 0.4fr;
+  grid-template-areas: "header header header header" "main main main main" "bottom bottom bottom bottom" "footer footer footer footer";
+  clear: left;
+}
+
+.header { grid-area: header; }
+
+.main {
+  grid-area: main;
+  background-color:rgba(26, 26, 26, .7);
+  background-image: url('../../assets/earth.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-color:rgba(5, 5, 5, .7);
+  text: center;
+  grid-area: footer;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+.rule {
+  border: .5px solid white;
+  opacity: .5;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.rule2 {
+  border: 5px solid white;
+  opacity: .1;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: -.5%;
+}
+
+.rule3 {
+  border: 1px solid #fec100;
+  opacity: 1;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: -.5%;
+  width: 20px;
+}
+
+.rule4 {
+  border: .5px solid white;
+  opacity: .1;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.rule5 {
+  border: 2px solid white;
+  opacity: .1;
+  z-index: 1;
+  border-radius: 3px;
+  width: 750px;
+  margin-top: 5%;
+}
+
+.rule6 {
+  border: 1px solid white;
+  opacity: .1;
+  z-index: 1;
+  border-radius: 3px;
+  width: 750px;
+  margin-top: 5%;
+}
+
+.bottom {
+  grid-area: bottom;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.star {
+  width: 55px;
+  text-align: center;
+  margin-top: -3%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 5;
+}
+
+.row {
+  margin-top: 5%;
+}
+
+.titleCard {
+  color: #fec100;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin-top: -2%;
+}
+
+.bot-text-2 {
+  color: #fec100;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+a {
+  color: white;
+}
+
+.globe {
+  width: 100px;
+  text-align: center;
+  margin-top: -4%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 5;
+}

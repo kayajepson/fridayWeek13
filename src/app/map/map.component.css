@@ -12,3 +12,33 @@
    height: 100%;
    width: 50%;
  }
+ body {
+   background-color: rgba(0, 0, 0, 1);
+   padding: 5px;
+   margin-top: .5%;
+   margin-bottom: .5%;
+ }
+
+ .btn {
+   margin: 2px;
+ }
+
+ .mapPlaceholder {
+   display: block;
+ margin: 0 auto;
+ }
+
+ #map {
+   height: 100%;
+ }
+
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ #map, #pano {
+   float: left;
+   height: 100%;
+   width: 50%;
+ }

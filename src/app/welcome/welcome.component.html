@@ -1,0 +1,68 @@
+<div class="grid-container" >
+  <div class="header">
+    <!-- <app-navbar></app-navbar> -->
+  </div>
+  <div class="main">
+    <div class="main-content">
+      <h1 id="start_header">
+        Let's explore the world!</h1>
+        <hr class="rule">
+        <h6 id="start_desc">Embark on a journey that takes you all over the world. From the most desolate roads in<br><br> Australia to the busy, bustling streets of New York City.</h6>
+        <hr class="rule">
+
+        <button type="button" name="start" (click)="goToPlayPage()" class="btn light-green btn-large"><a routerLink="play">SINGLE PLAYER</a></button>
+      </div>
+    </div>
+    <div class="bottom">
+      <hr class="rule2">
+      <p><img src="../../assets/star.png" alt="star image" class="star"></p>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4 left">
+            <div class="card-panel grey darken-4 z-depth-4">
+              <h5 class="titleCard">Official maps</h5>
+              <hr class="rule3">
+              <span class="white-text">
+                <p>Link to one</p>
+                <hr class="rule4">
+                <p>link to two</p>
+                <hr class="rule4">
+                <p>link to three</p>              </span>
+            </div>
+          </div>
+          <div class="col s12 m4 mid">
+            <div class="card-panel grey darken-4 z-depth-4">
+              <h5 class="titleCard">Popular maps</h5>
+              <hr class="rule3">
+              <span class="white-text">
+                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="panel panel-default">
+                  <h3><em>{{map.title}}</em><br>{{map.played}}</h3>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="col s12 m4 right">
+            <div class="card-panel grey darken-4 z-depth-4">
+              <h5 class="titleCard">New maps</h5>
+              <hr class="rule3">
+              <span class="white-text">
+                <p>Link to one</p>
+                <hr class="rule4">
+                <p>link to two</p>
+                <hr class="rule4">
+                <p>link to three</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="rule5">
+      <p><img src="../../assets/globe.png" alt="globe image" class="globe"></p>
+      <h3 class="bot-text-1">Do you want the ultimate GeoGuessr experience?</h3>
+      <h4 class="bot-text-2">Create your own maps, get rid of ads and more.</h4>
+    </div>
+    <div class="footer">
+      <p>Contact</p>
+      <hr class="rule6">
+    </div>
+  </div>

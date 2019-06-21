@@ -2,6 +2,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { Navbar } from './models/navbar.model';
 import { NgModule, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -16,6 +18,7 @@ export class AppComponent {
       this.currentFocus.score = score;
       this.currentFocus.map;
     }
-  title = 'app';
+  title = 'GeoGuessr';
   currentFocus = new Navbar(1,0,"World");
+
 }
