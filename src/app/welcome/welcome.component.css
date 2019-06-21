@@ -79,6 +79,22 @@ h6 {
   margin-top: -.5%;
 }
 
+.rule3 {
+  border: 1px solid #fec100;
+  opacity: 1;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: -.5%;
+  width: 20px;
+}
+
+.rule4 {
+  border: .5px solid white;
+  opacity: .1;
+  width: 300px;
+  border-radius: 5px;
+}
+
 .bottom {
   grid-area: bottom;
 }
@@ -94,9 +110,12 @@ h6 {
 }
 
 .row {
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
-.mid {
-
+.titleCard {
+  color: #fec100;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin-top: -2%;
 }
