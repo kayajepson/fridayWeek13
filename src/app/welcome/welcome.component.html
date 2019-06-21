@@ -35,11 +35,9 @@
               <h5 class="titleCard">Popular maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <p>Link to one</p>
-                <hr class="rule4">
-                <p>link to two</p>
-                <hr class="rule4">
-                <p>link to three</p>
+                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="panel panel-default">
+                  <h3><em>{{map.title}}</em><br>{{map.played}}</h3>
+                </div>
               </span>
             </div>
           </div>
