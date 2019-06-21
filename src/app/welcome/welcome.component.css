@@ -31,21 +31,17 @@ h6 {
   text-align: center;
 }
 
-.btn-lg {
-  padding-left: 45px;
-  padding-right: 45px;
-  font-weight: 600;
-  font-stretch: expanded;
+.btn-large {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
-
 
 .main-content {
   text-align: center;
-
 }
 
 .grid-container {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 5px 750px 700px;
@@ -118,4 +114,14 @@ h6 {
   font-family: 'Roboto Slab', serif;
   text-align: center;
   margin-top: -2%;
+}
+
+.globe {
+  width: 100px;
+  text-align: center;
+  margin-top: -3%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 5;
 }
