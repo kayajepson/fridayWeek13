@@ -18,3 +18,8 @@ p {
   margin-bottom: 1%;
   width: 105px;
 }
+
+.nav {
+  width: 100%;
+  /* float: left; */
+}
