@@ -19,28 +19,8 @@
    margin-bottom: .5%;
  }
 
- h3 {
-   background-color: rgba(0, 0, 0, 1);
-   margin-top: .5%;
-   color: white;
-   font-family: sans-serif;
-   font-weight: 100;
-   font-size: 15px;
-   text-align: right;
-   padding-right: 5%;
-   margin-bottom: .5%;
- }
-
  .btn {
    margin: 2px;
- }
-
- .logo {
-   float: left;
-   margin-left: 2%;
-   margin-top: .5%;
-   margin-bottom: 1%;
-   width: 105px;
  }
 
  .mapPlaceholder {

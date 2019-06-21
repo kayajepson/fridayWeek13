@@ -24,9 +24,10 @@ body {
   max-width: 680px;
   width: 100%;
   color: #ffffff;
+
 }
 
-.container {
+/* .container {
   background-color:rgba(26, 26, 26, .5);
   display: grid;
   grid-template-columns: auto 80% auto;
@@ -36,7 +37,7 @@ body {
 .grid-item {
   background-color: rgba(26, 26, 26, .5);
   padding: 20px;
-}
+} */
 
 .btn-lg {
   padding-left: 45px;
@@ -52,3 +53,16 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5% 750px 300px;
+  grid-template-areas: "header header header header" "main main main main" "bottom bottom bottom bottom";
+}
+
+.header { grid-area: header; }
+
+.main { grid-area: main; }
+
+.bottom { grid-area: bottom; }
