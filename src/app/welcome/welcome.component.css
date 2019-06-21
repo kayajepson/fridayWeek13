@@ -9,6 +9,10 @@ body {
   background-color: #1a1a1a;
 }
 
+h6 {
+  margin: 25px;
+}
+
 #start_header {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
@@ -36,14 +40,15 @@ body {
 
 
 .main-content {
-text-align: center;
+  text-align: center;
+
 }
 
 .grid-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5px 750px 300px;
+  grid-template-rows: 5px 750px 700px;
   grid-template-areas: "header header header header" "main main main main" "bottom bottom bottom bottom";
   clear: left;
 }
@@ -54,10 +59,36 @@ text-align: center;
   grid-area: main;
   background-color:rgba(26, 26, 26, .7);
   background-image: url('../../assets/earth.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bottom { grid-area: bottom; }
+.rule {
+  border: .5px solid white;
+  opacity: .5;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.rule2 {
+  border: 5px solid white;
+  opacity: .1;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: -.5%;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.star {
+  width: 55px;
+  text-align: center;
+  margin-top: -3%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 5;
+}
