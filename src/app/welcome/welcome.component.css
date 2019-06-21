@@ -138,6 +138,10 @@ h6 {
   font-size: 25px;
 }
 
+a {
+  color: white;
+}
+
 .globe {
   width: 100px;
   text-align: center;

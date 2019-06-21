@@ -13,8 +13,7 @@ import { AgmCoreModule } from '@agm/core';
   templateUrl: './map.component.html'
 })
 export class MapComponent {
-  constructor(private router: Router) { }
-
+  constructor(private router: Router) {}
 
   ngOnInit() {
     var fenway = {lat: 42.345573, lng: -71.098326};
