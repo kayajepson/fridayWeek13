@@ -23,11 +23,10 @@
               <h5 class="titleCard">Official maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <p>Link to one</p>
-                <hr class="rule4">
-                <p>link to two</p>
-                <hr class="rule4">
-                <p>link to three</p>              </span>
+                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                  <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
+                </div>
+              </span>
             </div>
           </div>
           <div class="col s12 m4 mid">
@@ -35,8 +34,8 @@
               <h5 class="titleCard">Popular maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="panel panel-default">
-                  <h3><em>{{map.title}}</em><br>{{map.played}}</h3>
+                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                  <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
                 </div>
               </span>
             </div>
@@ -46,11 +45,9 @@
               <h5 class="titleCard">New maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <p>Link to one</p>
-                <hr class="rule4">
-                <p>link to two</p>
-                <hr class="rule4">
-                <p>link to three</p>
+                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                  <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
+                </div>
               </span>
             </div>
           </div>
@@ -60,9 +57,12 @@
       <p><img src="../../assets/globe.png" alt="globe image" class="globe"></p>
       <h3 class="bot-text-1">Do you want the ultimate GeoGuessr experience?</h3>
       <h4 class="bot-text-2">Create your own maps, get rid of ads and more.</h4>
+      <br>
+      <button type="button" name="start" (click)="goToPlayPage()" class="btn light-green btn-small"><a routerLink="play">BECOME A PRO USER</a></button>
     </div>
     <div class="footer">
       <p>Contact</p>
       <hr class="rule6">
+      <p class="footnotes">Do you have any feedback? Want to do business with us? Send us a mail at daniel@geoguessr.com. <br> Please read and accept our Terms of Service and Privacy Policy</p>
     </div>
   </div>

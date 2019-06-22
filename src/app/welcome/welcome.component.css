@@ -9,6 +9,10 @@ h6 {
   margin: 25px;
 }
 
+.maps {
+  font-size: 13px;
+}
+
 .bot-text-1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
@@ -50,7 +54,7 @@ h6 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .01fr 1.2fr 1fr 0.4fr;
+  grid-template-rows: .01fr .7fr 1fr 0.4fr;
   grid-template-areas: "header header header header" "main main main main" "bottom bottom bottom bottom" "footer footer footer footer";
   clear: left;
 }
@@ -72,8 +76,8 @@ h6 {
   grid-area: footer;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
   font-size: 15px;
+  text-align: center;
 }
 
 
@@ -124,7 +128,7 @@ h6 {
   z-index: 1;
   border-radius: 3px;
   width: 750px;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .bottom {
@@ -173,4 +177,10 @@ a {
   left: 50%;
   margin-left: -50px;
   z-index: 5;
+}
+
+.footnotes {
+  color: #7d7d7d;
+  font-size: 14px;
+  text-align: center;
 }
