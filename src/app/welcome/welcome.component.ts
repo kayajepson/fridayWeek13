@@ -13,12 +13,17 @@ import { Router } from '@angular/router';
   providers: [MapService]
 })
 export class WelcomeComponent implements OnInit {
-  maps: FirebaseListObservable<any[]>;
+  new_maps: FirebaseListObservable<any[]>;
+  official_maps: FirebaseListObservable<any[]>;
+  popular_maps: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private mapService: MapService) { }
 
   ngOnInit() {
-    this.maps = this.mapService.getMaps();
+    this.new_maps = this.mapService.getNewMaps();
+    this.popular_maps = this.mapService.getPopularMaps();
+    this.official_maps = this.mapService.getOfficialMaps();
+
   }
 
 }

@@ -23,7 +23,7 @@
               <h5 class="titleCard">Official maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                <div *ngFor="let map of new_maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
                   <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
                 </div>
               </span>
@@ -34,7 +34,7 @@
               <h5 class="titleCard">Popular maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                <div *ngFor="let map of new_maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
                   <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
                 </div>
               </span>
@@ -45,7 +45,7 @@
               <h5 class="titleCard">New maps</h5>
               <hr class="rule3">
               <span class="white-text">
-                <div *ngFor="let map of maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
+                <div *ngFor="let map of new_maps | async" (click)="goToDetailPage(album)" class="maps panel panel-default">
                   <h3 class="maps">{{map.title}}<br>{{map.played}}<hr class="rule4"></h3>
                 </div>
               </span>

@@ -44,10 +44,9 @@ export class MapComponent {
         placeMarker(event.latLng);
       });
 
-
       function placeMarker(location) {
         clearMarkers();
-        var marker = new google.maps.Marker({
+        let marker = new google.maps.Marker({
           position: location,
           map: map
         });
@@ -79,7 +78,6 @@ export class MapComponent {
         clearMarkers();
         markers = [];
       }
-
 
     }
 

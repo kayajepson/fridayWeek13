@@ -5,14 +5,24 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class MapService {
-  maps: FirebaseListObservable<any[]>;
+  new_maps: FirebaseListObservable<any[]>;
+  official_maps: FirebaseListObservable<any[]>;
+  popular_maps: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.maps = database.list('maps');
+    this.new_maps = database.list('new_maps');
+    this.official_maps = database.list('official_maps');
+    this.popular_maps = database.list('popular_maps');
   }
 
-  getMaps() {
-    return this.maps;
+  getNewMaps() {
+    return this.new_maps;
+  }
+  getPopularMaps() {
+    return this.popular_maps;
+  }
+  getOfficialMaps() {
+    return this.official_maps;
   }
 
   // addMap(newMap: Map) {

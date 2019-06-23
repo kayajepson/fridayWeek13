@@ -1,4 +1,4 @@
-{ "maps": [{
+{ "official_maps": [{
   "title": " World",
   "played": "Played 42,477,373 times",
   "id": "1"
@@ -14,18 +14,18 @@
   "id": "3"
 },
 {
-  "title": " Dumb Test",
-  "played": "Played 760,727 times",
+  "title": " European Union",
+  "played": "Played 2,086,141 times",
   "id": "4"
 },
 {
-  "title": " US Cities",
-  "played": "Played 797,073 times",
+  "title": " United Kingdom",
+  "played": "Played 1,304,412 times",
   "id": "5"
 },
 {
-  "title": " European Stadiums",
-  "played": "Played 1,527,091 times",
+  "title": " Netherlands",
+  "played": "Played 537,814 times",
   "id": "6"
 }]
 }

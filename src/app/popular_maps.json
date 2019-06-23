@@ -1,0 +1,31 @@
+{ "popular_maps": [{
+  "title": " Dumb Test",
+  "played": "Played 726,442 times",
+  "id": "1"
+},
+{
+  "title": " US Cities",
+  "played": "Played 797,493 times",
+  "id": "2"
+},
+{
+  "title": " European Staduims",
+  "played": "Played 1,528,155 times",
+  "id": "3"
+},
+{
+  "title": " A Diverse World",
+  "played": "Played 259,193 times",
+  "id": "4"
+},
+{
+  "title": " Famous Places all over the World",
+  "played": "Played 879,948 times",
+  "id": "5"
+},
+{
+  "title": " An Urban World",
+  "played": "Played 95,674 times",
+  "id": "6"
+}]
+}
