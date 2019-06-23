@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Navbar } from '../models/navbar.model'
+import { AppComponent } from '../app.component'
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +15,6 @@ export class NavBarComponent {
 //    submitMap.done = setCompleteness;
 //  }
 
-nav = new Navbar(1, 0, "World");
+currentFocus = new Navbar(1,0,"World");
 
 }

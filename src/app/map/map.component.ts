@@ -4,8 +4,8 @@ import { NgModule, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
 import { Router } from '@angular/router';
 import { MapService } from '../map.service';
-
 import { AgmCoreModule } from '@agm/core';
+import { AppComponent } from '../app.component'
 
 
 @Component({
