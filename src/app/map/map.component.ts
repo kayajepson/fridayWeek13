@@ -19,27 +19,35 @@ export class MapComponent {
   ngOnInit() {
     var fenway = {lat: 42.345573, lng: -71.098326};
     var panorama = new google.maps.StreetViewPanorama(
-        document.getElementById('pano'), {
-          position: fenway,
-          pov: {
-            heading: 34,
-            pitch: 10
-          }
-        });
-  }
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
 
-//   initMiniMap() {
-//   var myLatLng = {lat: -25.363, lng: 131.044};
-//
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 2,
-//     center: myLatLng
-//   });
-//
-//   var marker = new google.maps.Marker({
-//     position: myLatLng,
-//     map: map,
-//     title: 'Make your guess!'
-//   });
-// }
-}
+      this.initMiniMap();
+    }
+
+    initMiniMap() {
+      var myLatLng = {lat: 14.599, lng: 28.673};
+
+      var map = new google.maps.Map(document.getElementById('small-map'), {
+        zoom: 1,
+        center: myLatLng
+      });
+
+      google.maps.event.addListener(map, 'click', function(event) {
+        placeMarker(event.latLng);
+      });
+
+      function placeMarker(location) {
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+    }
+
+  }
