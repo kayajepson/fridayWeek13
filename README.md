@@ -2,6 +2,8 @@
 
 #### By _**Kaya Jepson**_
 
+![game image](/src/assets/geoGuessr.png)
+
 ## Description
 
 _Attempting to recreate the website/game _Geoguessr._
