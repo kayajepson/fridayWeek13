@@ -6,7 +6,7 @@
 
 ## Description
 
-Attempting to recreate the website/game _Geoguessr. *Still in progress*/
+Attempting to recreate the website/game _Geoguessr. *Still in progress* <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 | Behavior | Input | Output |
